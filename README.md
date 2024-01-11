@@ -1,1 +1,2 @@
-# jenkins_cicd
+# jenkins-terraform
+Deploy IaC using Jenkins and Terraform
