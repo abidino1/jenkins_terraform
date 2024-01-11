@@ -1,4 +1,4 @@
-pipeline {
+https://github.com/abidino1/jenkins_terraform.gitpipeline {
     agent any
 
     parameters {
@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/tekperfect/jenkins-terraform.git'
+                git branch: 'main', url: 'https://github.com/abidino1/jenkins_terraform.git'
             }
         }
         stage('Terraform init') {
