@@ -25,6 +25,7 @@ resource "aws_instance" "public_instance" {
 
   provisioner "remote-exec" {
    inline = [
+     "sudo apt-get remove needrestart",
      "sudo apt update -y",
      "sudo apt upgrade -y",
      "sudo apt install -f -y apache2",
