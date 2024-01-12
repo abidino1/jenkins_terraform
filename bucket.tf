@@ -23,7 +23,7 @@ resource "aws_s3_bucket_policy" "my_bucket_policy" {
         Principal = "*"
         Condition = {
           IpAddress = {
-            "aws:SourceIp": ["24.130.157.178/24", "67.164.82.76/24"]
+            "aws:SourceIp": var.team_member_ips
           }
         }
       }
